@@ -1,2 +1,6 @@
 #!/bin/bash
+<<<<<<< HEAD
 trA-Za-z N-ZA-Mn-za-m
+=======
+perl -lne 'print if $. % 2 == 1'
+>>>>>>> 5216801130523181b24664403417d4f3a91782b9
