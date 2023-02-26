@@ -1,10 +1,25 @@
-Filename	Description
-0-simply_match_school.rb	A regular expression that matches School
-1-repetition_token_0.rb	A regular expression that matches hbttn
-2-repetition_token_1.rb	A regular expression that matches htn and hbtn
-3-repetition_token_2.rb	A regular expression that matches hbtn, where the letter t can be replied
-4-repetition_token_3.rb	A regular expression that matches hbtn with or without t
-5-beginning_and_end.rb	A regular expression that matches with a word that starts with h and ends with n
-6-phone_number.rb	A regular expression that match with 10 digit phone number
-7-OMG_WHY_ARE_YOU_SHOUTING.rb	A regular expression that only matches capital letters
-100-textme.rb	Filters information of a log file
+# HTTPS SSL
+
+In this project, I learned about the importance of HTTPS and how it works. I
+configured my HolbertonBnB web servers with `certbot` certificate and HAproxy
+SSL termination.
+
+## Tasks :page_with_curl:
+
+* **0. World wide web**
+  * [0-world_wide_web](./0-world_wide_web): Bash script that displays
+  information about subdomains on my configured servers.
+  * Usage: `./0-world_wide_web <domain> <subdomain>`
+  * Output: `The subdomain [SUB_DOMAIN] is a [RECORD_TYPE] record and
+  points to [DESTINATION]`
+  * If no `subdomain` parameter is passed, displays information about the
+  subdomains `www`, `lb-01`, `web-01` and `web-02`, in that order.
+
+* **1. HAproxy SSL termination**
+  * [1-haproxy_ssl_termination](./1-haproxy_ssl_termination): HAproxy
+  configuration file that accepts encrypted SSL traffic for the subdomain
+  `www.` on TCP port 443.
+
+* **2. No loophole in your website traffic**
+  * [100-redirect_http_to_https](./100-redirect_http_to_https): HAproxy
+  configuration file that automatically redirects HTTP traffic to HTTPS.
